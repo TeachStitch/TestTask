@@ -8,9 +8,12 @@
 import UIKit
 
 class QuoteDetailsViewController: UIViewController {
+    // MARK: - Properties
+    var quoteFavouriteChanged: GenericClosure<Quote>?
+    private var quote: Quote
+    private let coreDataManager: CoreDataManagerQuotesContext = CoreDataManager.shared
     
-    private var quote:Quote? = nil
-    
+    // MARK: - UI Element(s)
     let symbolLabel = UILabel()
     let nameLabel = UILabel()
     let lastLabel = UILabel()
@@ -18,34 +21,42 @@ class QuoteDetailsViewController: UIViewController {
     let readableLastChangePercentLabel = UILabel()
     let favoriteButton = UIButton()
     
-    
-    
-    
-    init(quote:Quote) {
-        super.init(nibName: nil, bundle: nil)
+    // MARK: - Initialization
+    init(quote: Quote) {
         self.quote = quote
+        super.init(nibName: nil, bundle: nil)
     }
     
+    @available(*, unavailable)
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         view.backgroundColor = .white
         addSubviews()
         setupAutolayout()
-        symbolLabel.text = quote?.symbol
-        nameLabel.text = quote?.name
-        lastLabel.text = quote?.last
-        currencyLabel.text = quote?.currency
-        readableLastChangePercentLabel.text = quote?.readableLastChangePercent
         
+        symbolLabel.textColor = .black
+        symbolLabel.text = quote.symbol
+        
+        nameLabel.textColor = .black
+        nameLabel.text = quote.name
+        
+        lastLabel.textColor = .black
+        lastLabel.text = quote.lastValue
+        
+        currencyLabel.textColor = .black
+        currencyLabel.text = quote.currencyCode
+        
+        readableLastChangePercentLabel.text = quote.readableLastChangePercent
+        readableLastChangePercentLabel.textColor = quote.variationColor.color
     }
     
+    // MARK: - Method(s)
     func addSubviews() {
-        
         symbolLabel.textAlignment = .center
         symbolLabel.font = .boldSystemFont(ofSize: 40)
         
@@ -66,6 +77,8 @@ class QuoteDetailsViewController: UIViewController {
         readableLastChangePercentLabel.font = .systemFont(ofSize: 30)
         
         favoriteButton.setTitle("Add to favorites", for: .normal)
+        favoriteButton.setTitle("Remove from favourites", for: .selected)
+        favoriteButton.isSelected = quote.isFavourite
         favoriteButton.layer.cornerRadius = 6
         favoriteButton.layer.masksToBounds = true
         favoriteButton.layer.borderWidth = 3
@@ -121,14 +134,27 @@ class QuoteDetailsViewController: UIViewController {
                         
             favoriteButton.topAnchor.constraint(equalTo: readableLastChangePercentLabel.bottomAnchor, constant: 30),
             favoriteButton.centerXAnchor.constraint(equalTo: safeArea.centerXAnchor),
-            favoriteButton.widthAnchor.constraint(equalToConstant: 150),
+            favoriteButton.widthAnchor.constraint(equalToConstant: 200),
             favoriteButton.heightAnchor.constraint(equalToConstant: 44),
             
         ])
     }
     
     
-    @objc func didPressFavoriteButton(_ sender:UIButton!) {
-        // TODO
+    @objc func didPressFavoriteButton(_ sender: UIButton) {
+        sender.isSelected.toggle()
+        quote.isFavourite = sender.isSelected
+        
+        if sender.isSelected {
+            Task {
+                await coreDataManager.create(quote: quote)
+                quoteFavouriteChanged?(quote)
+            }
+        } else {
+            Task {
+                await coreDataManager.delete(quote: quote)
+                quoteFavouriteChanged?(quote)
+            }
+        }
     }
 }

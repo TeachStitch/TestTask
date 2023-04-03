@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21513" systemVersion="22A400" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="QuoteEntity" representedClassName=".QuoteEntity" syncable="YES">
+        <attribute name="currencyCode" attributeType="String" defaultValueString=""/>
+        <attribute name="lastValue" attributeType="String" defaultValueString=""/>
+        <attribute name="name" attributeType="String" defaultValueString=""/>
+        <attribute name="readableLastChangePercent" attributeType="String" defaultValueString=""/>
+        <attribute name="symbol" attributeType="String" defaultValueString=""/>
+        <attribute name="variationColorRawValue" attributeType="String" defaultValueString=""/>
+    </entity>
+</model>
