@@ -15,6 +15,19 @@
 		1AA3C8B6263AB26C0041430A /* QuoteDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA3C8B5263AB26C0041430A /* QuoteDetailsViewController.swift */; };
 		1AA3C8BA263AB2980041430A /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA3C8B9263AB2980041430A /* Quote.swift */; };
 		1AC78CBF263C6686004D4F8F /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC78CBE263C6686004D4F8F /* Market.swift */; };
+		AAAE2CD629DB2D4900648813 /* DataManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAE2CD529DB2D4900648813 /* DataManagerError.swift */; };
+		AAAE2CDF29DB2E9000648813 /* Array+QueryItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAE2CDE29DB2E9000648813 /* Array+QueryItems.swift */; };
+		AAAE2CE129DB316000648813 /* VariationColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAE2CE029DB316000648813 /* VariationColor.swift */; };
+		AAAE2CE529DB390300648813 /* UITableView+Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAE2CE429DB390300648813 /* UITableView+Registration.swift */; };
+		AAAE2CE729DB393500648813 /* NSObject+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAE2CE629DB393500648813 /* NSObject+Identifier.swift */; };
+		AAAE2CEB29DB3A2700648813 /* QuoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAE2CEA29DB3A2700648813 /* QuoteTableViewCell.swift */; };
+		AAAE2CF129DB493E00648813 /* Quotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAAE2CEF29DB493E00648813 /* Quotes.xcdatamodeld */; };
+		AAAE2CF329DB4B1700648813 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAE2CF229DB4B1700648813 /* CoreDataManager.swift */; };
+		AAAE2CF829DB4E2300648813 /* QuoteEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAE2CF629DB4E2300648813 /* QuoteEntity+CoreDataClass.swift */; };
+		AAAE2CF929DB4E2300648813 /* QuoteEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAE2CF729DB4E2300648813 /* QuoteEntity+CoreDataProperties.swift */; };
+		AAAE2CFC29DB4EE800648813 /* NSManagedObjectContext+Perform.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAE2CFB29DB4EE800648813 /* NSManagedObjectContext+Perform.swift */; };
+		AAAE2CFE29DB501D00648813 /* CoreDataManager+QuotesContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAE2CFD29DB501D00648813 /* CoreDataManager+QuotesContext.swift */; };
+		AAAE2D0029DB505A00648813 /* CoreDataManager+DeletionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAAE2CFF29DB505A00648813 /* CoreDataManager+DeletionContext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +41,19 @@
 		1AA3C8B5263AB26C0041430A /* QuoteDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteDetailsViewController.swift; sourceTree = "<group>"; };
 		1AA3C8B9263AB2980041430A /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		1AC78CBE263C6686004D4F8F /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
+		AAAE2CD529DB2D4900648813 /* DataManagerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerError.swift; sourceTree = "<group>"; };
+		AAAE2CDE29DB2E9000648813 /* Array+QueryItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+QueryItems.swift"; sourceTree = "<group>"; };
+		AAAE2CE029DB316000648813 /* VariationColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VariationColor.swift; sourceTree = "<group>"; };
+		AAAE2CE429DB390300648813 /* UITableView+Registration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Registration.swift"; sourceTree = "<group>"; };
+		AAAE2CE629DB393500648813 /* NSObject+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Identifier.swift"; sourceTree = "<group>"; };
+		AAAE2CEA29DB3A2700648813 /* QuoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteTableViewCell.swift; sourceTree = "<group>"; };
+		AAAE2CF029DB493E00648813 /* Quote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Quote.xcdatamodel; sourceTree = "<group>"; };
+		AAAE2CF229DB4B1700648813 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		AAAE2CF629DB4E2300648813 /* QuoteEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuoteEntity+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		AAAE2CF729DB4E2300648813 /* QuoteEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "QuoteEntity+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		AAAE2CFB29DB4EE800648813 /* NSManagedObjectContext+Perform.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Perform.swift"; sourceTree = "<group>"; };
+		AAAE2CFD29DB501D00648813 /* CoreDataManager+QuotesContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataManager+QuotesContext.swift"; sourceTree = "<group>"; };
+		AAAE2CFF29DB505A00648813 /* CoreDataManager+DeletionContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataManager+DeletionContext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +86,8 @@
 		1AA3C895263AA2030041430A /* Technical-test */ = {
 			isa = PBXGroup;
 			children = (
+				AAAE2CEC29DB48DA00648813 /* Helpers */,
+				AAAE2CDB29DB2E7500648813 /* Common */,
 				1AA3C8B0263AA8220041430A /* Manager */,
 				1AA3C8AC263AA2D90041430A /* Model */,
 				1AA3C8AB263AA2D10041430A /* View */,
@@ -74,7 +102,7 @@
 		1AA3C8AB263AA2D10041430A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				1AA3C89A263AA2030041430A /* QuotesListViewController.swift */,
+				AAAE2CE829DB398600648813 /* QuotesListViewController */,
 				1AA3C8B5263AB26C0041430A /* QuoteDetailsViewController.swift */,
 			);
 			path = View;
@@ -85,6 +113,7 @@
 			children = (
 				1AA3C8B9263AB2980041430A /* Quote.swift */,
 				1AC78CBE263C6686004D4F8F /* Market.swift */,
+				AAAE2CE029DB316000648813 /* VariationColor.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -93,8 +122,114 @@
 			isa = PBXGroup;
 			children = (
 				1AA3C8B1263AA8360041430A /* DataManager.swift */,
+				AAAE2CD529DB2D4900648813 /* DataManagerError.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		AAAE2CDB29DB2E7500648813 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				AAAE2CDC29DB2E7C00648813 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		AAAE2CDC29DB2E7C00648813 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AAAE2CFA29DB4ED100648813 /* CoreData */,
+				AAAE2CE329DB38F000648813 /* UIKit */,
+				AAAE2CDD29DB2E8300648813 /* Foundation */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AAAE2CDD29DB2E8300648813 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				AAAE2CE629DB393500648813 /* NSObject+Identifier.swift */,
+				AAAE2CDE29DB2E9000648813 /* Array+QueryItems.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		AAAE2CE329DB38F000648813 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				AAAE2CE429DB390300648813 /* UITableView+Registration.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		AAAE2CE829DB398600648813 /* QuotesListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				AAAE2CE929DB399100648813 /* Subviews */,
+				1AA3C89A263AA2030041430A /* QuotesListViewController.swift */,
+			);
+			path = QuotesListViewController;
+			sourceTree = "<group>";
+		};
+		AAAE2CE929DB399100648813 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				AAAE2CEA29DB3A2700648813 /* QuoteTableViewCell.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		AAAE2CEC29DB48DA00648813 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AAAE2CED29DB48E200648813 /* CoreData */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		AAAE2CED29DB48E200648813 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				AAAE2CF429DB4D9D00648813 /* Entities */,
+				AAAE2CEE29DB48ED00648813 /* CoreDataManager */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		AAAE2CEE29DB48ED00648813 /* CoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				AAAE2CEF29DB493E00648813 /* Quotes.xcdatamodeld */,
+				AAAE2CF229DB4B1700648813 /* CoreDataManager.swift */,
+				AAAE2CFD29DB501D00648813 /* CoreDataManager+QuotesContext.swift */,
+				AAAE2CFF29DB505A00648813 /* CoreDataManager+DeletionContext.swift */,
+			);
+			path = CoreDataManager;
+			sourceTree = "<group>";
+		};
+		AAAE2CF429DB4D9D00648813 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				AAAE2CF529DB4DA500648813 /* QuoteEntity */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		AAAE2CF529DB4DA500648813 /* QuoteEntity */ = {
+			isa = PBXGroup;
+			children = (
+				AAAE2CF629DB4E2300648813 /* QuoteEntity+CoreDataClass.swift */,
+				AAAE2CF729DB4E2300648813 /* QuoteEntity+CoreDataProperties.swift */,
+			);
+			path = QuoteEntity;
+			sourceTree = "<group>";
+		};
+		AAAE2CFA29DB4ED100648813 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				AAAE2CFB29DB4EE800648813 /* NSManagedObjectContext+Perform.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,12 +301,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAAE2CE529DB390300648813 /* UITableView+Registration.swift in Sources */,
 				1AA3C8B6263AB26C0041430A /* QuoteDetailsViewController.swift in Sources */,
 				1AA3C89B263AA2030041430A /* QuotesListViewController.swift in Sources */,
+				AAAE2CF129DB493E00648813 /* Quotes.xcdatamodeld in Sources */,
 				1AA3C8B2263AA8360041430A /* DataManager.swift in Sources */,
+				AAAE2CFE29DB501D00648813 /* CoreDataManager+QuotesContext.swift in Sources */,
+				AAAE2CF929DB4E2300648813 /* QuoteEntity+CoreDataProperties.swift in Sources */,
+				AAAE2CDF29DB2E9000648813 /* Array+QueryItems.swift in Sources */,
+				AAAE2CFC29DB4EE800648813 /* NSManagedObjectContext+Perform.swift in Sources */,
+				AAAE2D0029DB505A00648813 /* CoreDataManager+DeletionContext.swift in Sources */,
+				AAAE2CF829DB4E2300648813 /* QuoteEntity+CoreDataClass.swift in Sources */,
+				AAAE2CD629DB2D4900648813 /* DataManagerError.swift in Sources */,
 				1AA3C8BA263AB2980041430A /* Quote.swift in Sources */,
 				1AA3C897263AA2030041430A /* AppDelegate.swift in Sources */,
+				AAAE2CEB29DB3A2700648813 /* QuoteTableViewCell.swift in Sources */,
 				1AC78CBF263C6686004D4F8F /* Market.swift in Sources */,
+				AAAE2CE729DB393500648813 /* NSObject+Identifier.swift in Sources */,
+				AAAE2CF329DB4B1700648813 /* CoreDataManager.swift in Sources */,
+				AAAE2CE129DB316000648813 /* VariationColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +513,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AAAE2CEF29DB493E00648813 /* Quotes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AAAE2CF029DB493E00648813 /* Quote.xcdatamodel */,
+			);
+			currentVersion = AAAE2CF029DB493E00648813 /* Quote.xcdatamodel */;
+			path = Quotes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1AA3C88B263AA2030041430A /* Project object */;
 }
